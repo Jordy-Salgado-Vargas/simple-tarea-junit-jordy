@@ -46,8 +46,6 @@ public class App {
                     break;
             }
         }
-        System.out.print("hola mundo ");
-
     }
 
     public static Double areaCi(Double radio) 

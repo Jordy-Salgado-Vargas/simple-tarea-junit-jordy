@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: hn.js.jv.simple_tarea_junit_jordy.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s -- in hn.js.jv.simple_tarea_junit_jordy.AppTest

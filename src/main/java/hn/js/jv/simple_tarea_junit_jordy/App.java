@@ -61,15 +61,35 @@ public class App {
     }
 
     public static Double areaRect(Double base, Double altura) 
-    {
-        Double resp = base*altura;
-        return Math.round(resp*100.0)/100.0; 
+    {	
+    	Double  resp;
+    	
+    	if(base < 0 || altura < 0)
+    	{
+    		JOptionPane.showMessageDialog(null, "La base o la altura no pueden ser negativas", null, 0);
+    		return null;
+    		
+    	}else{
+    		
+    		resp = base*altura;
+        	return Math.round(resp*100.0)/100.0; 
+        
+    	}
     }
 
-    public static Double areaTri(Double base, Double altura)
+    public static Double areaTri(Double base, Double altura) 
     {
-        Double resp = (base*altura)/2;
-        return Math.round(resp*100.0)/100.0; 
+    	Double resp;
+        if (base < 0 || altura < 0) 
+        {
+            throw new IllegalArgumentException("La base o la altura no pueden ser negativas");
+            
+        }else{
+        	
+        	resp = (base*altura)/2;
+        	return Math.round(resp*100.0)/100.0;
+        }
     }
+
 }
 
